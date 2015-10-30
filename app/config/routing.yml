@@ -1,3 +1,13 @@
+eighty_eight_app:
+    resource: "@EightyEightAppBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+eighty_eight_sky:
+    resource: "@EightyEightSkyBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
