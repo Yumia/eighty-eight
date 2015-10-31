@@ -28,13 +28,6 @@ class Star
     private $id;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="hip", type="integer")
-     */
-    private $hip;
-
-    /**
      * @var float
      *
      * @ORM\Column(name="right_ascension", type="float")
@@ -83,13 +76,6 @@ class Star
      */
     private $name;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="constellation_code", type="string", length=3)
-     */
-    private $constellationCode;
-
 
     /**
      * Get id
@@ -99,30 +85,6 @@ class Star
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set hip
-     *
-     * @param integer $hip
-     *
-     * @return Star
-     */
-    public function setHip($hip)
-    {
-        $this->hip = $hip;
-
-        return $this;
-    }
-
-    /**
-     * Get hip
-     *
-     * @return integer
-     */
-    public function getHip()
-    {
-        return $this->hip;
     }
 
     /**
@@ -294,27 +256,26 @@ class Star
     }
 
     /**
-     * Set constellationCode
+     * Set constellation
      *
-     * @param string $constellationCode
+     * @param \EightyEight\SkyBundle\Entity\Constellation $constellation
      *
      * @return Star
      */
-    public function setConstellationCode($constellationCode)
+    public function setConstellation(\EightyEight\SkyBundle\Entity\Constellation $constellation = null)
     {
-        $this->constellationCode = $constellationCode;
+        $this->constellation = $constellation;
 
         return $this;
     }
 
     /**
-     * Get constellationCode
+     * Get constellation
      *
-     * @return string
+     * @return \EightyEight\SkyBundle\Entity\Constellation
      */
-    public function getConstellationCode()
+    public function getConstellation()
     {
-        return $this->constellationCode;
+        return $this->constellation;
     }
 }
-

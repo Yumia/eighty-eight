@@ -10,4 +10,27 @@ namespace EightyEight\SkyBundle\Entity;
  */
 class StarRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function delete()
+    {
+        return $this->createQueryBuilder("delete")
+            ->delete()
+            ->getQuery()
+            ->execute();
+    }
+
+    public function closestFrom($right_ascension, $declination, $constellation=null)
+    {
+        $q = $this->createQueryBuilder('q')
+            ->join('q.constellation', 'c');
+
+        if($constellation != null) {
+            $q->where("c.code = '$constellation'");
+        }
+
+        $q->orderBy("ABS(q.rightAscension - $right_ascension)", 'ASC')
+            ->addOrderBy("ABS(q.declination - $declination)", 'ASC');
+
+        //return $q->setMaxResults(1)->getQuery()->getSQL();
+        return $q->setMaxResults(1)->getQuery()->getSingleResult();
+    }
 }

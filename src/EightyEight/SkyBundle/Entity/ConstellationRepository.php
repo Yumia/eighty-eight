@@ -10,4 +10,11 @@ namespace EightyEight\SkyBundle\Entity;
  */
 class ConstellationRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function delete()
+    {
+        return $this->createQueryBuilder("delete")
+            ->delete()
+            ->getQuery()
+            ->execute();
+    }
 }

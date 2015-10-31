@@ -81,6 +81,13 @@ class Constellation
      */
     private $hemisphere;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="source", type="string", length=255)
+     */
+    private $source;
+
 
     /**
      * Get id
@@ -259,5 +266,109 @@ class Constellation
     {
         return $this->hemisphere;
     }
-}
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->stars = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->lines = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
+    /**
+     * Set source
+     *
+     * @param string $source
+     *
+     * @return Constellation
+     */
+    public function setSource($source)
+    {
+        $this->source = $source;
+
+        return $this;
+    }
+
+    /**
+     * Get source
+     *
+     * @return string
+     */
+    public function getSource()
+    {
+        return $this->source;
+    }
+
+    /**
+     * Add star
+     *
+     * @param \EightyEight\SkyBundle\Entity\Star $star
+     *
+     * @return Constellation
+     */
+    public function addStar(\EightyEight\SkyBundle\Entity\Star $star)
+    {
+        $this->stars[] = $star;
+
+        return $this;
+    }
+
+    /**
+     * Remove star
+     *
+     * @param \EightyEight\SkyBundle\Entity\Star $star
+     */
+    public function removeStar(\EightyEight\SkyBundle\Entity\Star $star)
+    {
+        $this->stars->removeElement($star);
+    }
+
+    /**
+     * Get stars
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getStars()
+    {
+        return $this->stars;
+    }
+
+    /**
+     * Add line
+     *
+     * @param \EightyEight\SkyBundle\Entity\Line $line
+     *
+     * @return Constellation
+     */
+    public function addLine(\EightyEight\SkyBundle\Entity\Line $line)
+    {
+        $this->lines[] = $line;
+
+        return $this;
+    }
+
+    /**
+     * Remove line
+     *
+     * @param \EightyEight\SkyBundle\Entity\Line $line
+     */
+    public function removeLine(\EightyEight\SkyBundle\Entity\Line $line)
+    {
+        $this->lines->removeElement($line);
+    }
+
+    /**
+     * Get lines
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getLines()
+    {
+        return $this->lines;
+    }
+
+    public function __toString()
+    {
+        return $this->getCode();
+    }
+}
