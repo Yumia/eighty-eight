@@ -199,6 +199,11 @@ class LoadDataCommand extends ContainerAwareCommand
             $declination = (float)number_format(AstroMaths::dms2deg("$arc_h $arc_m"), 4);
             $constallation = isset($this->constellations[strtolower($code)]) ? $this->constellations[strtolower($code)] : null;
 
+            // Normalement, il n'y a pas d'étoile à ces coordonnées ...
+            if($rightAscension == 0 && $declination == 0) {
+                continue;
+            }
+
             // Attention à Sirus qui à une magnitude de -99 pour des raisons de format (3bits)
             // la vrai magnitude est ainsi -147
             // On divise par 100 pour obtenir la magnitude réelle
