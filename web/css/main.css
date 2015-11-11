@@ -1,0 +1,1175 @@
+@import url(../fonts/proxima-nova/proxima-nova.css);
+@import url(../fonts/martel-sans/martel-sans.css);
+/* line 5, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_base.scss */
+::-moz-selection {
+  /* Code for Firefox */
+  color: #151515;
+  background: #fff;
+}
+
+/* line 6, ../sass/_base.scss */
+::selection {
+  color: #151515;
+  background: #fff;
+}
+
+/*::-webkit-scrollbar {
+  width: 11px;
+  height: 1px;
+  background-color: transparent;}
+
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+::-webkit-scrollbar-thumb:hover {background-color: $green;}
+::-webkit-scrollbar-thumb:active {background-color: $green; box-shadow: inset 0px 0px 19px #317D99;}*/
+/* line 26, ../sass/_base.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../sass/_base.scss */
+body {
+  font-family: "proxima_nova_regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151515;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 38, ../sass/_base.scss */
+strong {
+  font-family: "proxima_nova_bold", sans-serif;
+}
+
+/* line 43, ../sass/_base.scss */
+.content p, .content ul, .content ol, .content blockquote {
+  font-family: "proxima_nova_regular", sans-serif;
+  color: #666666;
+  margin-bottom: 1.5em;
+}
+/* line 49, ../sass/_base.scss */
+.content ul {
+  padding-left: 10px;
+}
+/* line 53, ../sass/_base.scss */
+.content ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+/* line 57, ../sass/_base.scss */
+.content ul li {
+  text-indent: -5px;
+}
+
+/* line 62, ../sass/_base.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 68, ../sass/_base.scss */
+a:hover {
+  color: #000000;
+}
+
+/* line 73, ../sass/_base.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "proxima_nova_bold", sans-serif;
+  margin-bottom: 24px;
+}
+
+/* line 78, ../sass/_base.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 82, ../sass/_base.scss */
+h2 {
+  font-size: 1.325em;
+}
+
+/* line 86, ../sass/_base.scss */
+h3 {
+  font-size: 1.25em;
+}
+
+/* line 90, ../sass/_base.scss */
+h4 {
+  font-size: 1.125em;
+}
+
+/* line 94, ../sass/_base.scss */
+h5, h6 {
+  font-size: 1em;
+}
+
+/* line 58, ../sass/_elements.scss */
+.left {
+  float: left;
+}
+
+/* line 59, ../sass/_elements.scss */
+.right {
+  float: right;
+}
+
+/* line 61, ../sass/_elements.scss */
+p.lead {
+  color: #929292;
+}
+
+/* line 65, ../sass/_elements.scss */
+.title-main {
+  font-family: "proxima_nova_extrabold", sans-serif;
+  font-size: 2.25em;
+  text-transform: uppercase;
+  color: #191919;
+  letter-spacing: 0.3em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+/* line 75, ../sass/_elements.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 .9em;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  font-family: "proxima_nova_bold", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.75em;
+  padding: 0.625em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #222222;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../sass/_elements.scss */
+.btn:before {
+  background-color: #ffffff;
+}
+/* line 16, ../sass/_elements.scss */
+.btn.hv-green:before {
+  background-color: #81faa8;
+}
+/* line 20, ../sass/_elements.scss */
+.btn.hv-red:before {
+  background-color: #fbaaa9;
+}
+/* line 24, ../sass/_elements.scss */
+.btn.hv-blue:before {
+  background-color: #97f9fe;
+}
+/* line 28, ../sass/_elements.scss */
+.btn.hv-yellow:before {
+  background-color: #fefa97;
+}
+/* line 32, ../sass/_elements.scss */
+.btn.hv-white:before {
+  background-color: #ffffff;
+}
+/* line 36, ../sass/_elements.scss */
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* line 53, ../sass/_elements.scss */
+.btn:hover:before, .btn:focus:before, .btn:active:before, .btn.active:before {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/* line 91, ../sass/_elements.scss */
+.btn.btn-green {
+  background-color: #81faa8;
+}
+/* line 95, ../sass/_elements.scss */
+.btn.btn-red {
+  background-color: #fbaaa9;
+}
+/* line 99, ../sass/_elements.scss */
+.btn.btn-blue {
+  background-color: #97f9fe;
+}
+/* line 103, ../sass/_elements.scss */
+.btn.btn-yellow {
+  background-color: #fefa97;
+}
+
+/* line 108, ../sass/_elements.scss */
+.text-hv {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 .9em;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../sass/_elements.scss */
+.text-hv:before {
+  background-color: #ffffff;
+}
+/* line 16, ../sass/_elements.scss */
+.text-hv.hv-green:before {
+  background-color: #81faa8;
+}
+/* line 20, ../sass/_elements.scss */
+.text-hv.hv-red:before {
+  background-color: #fbaaa9;
+}
+/* line 24, ../sass/_elements.scss */
+.text-hv.hv-blue:before {
+  background-color: #97f9fe;
+}
+/* line 28, ../sass/_elements.scss */
+.text-hv.hv-yellow:before {
+  background-color: #fefa97;
+}
+/* line 32, ../sass/_elements.scss */
+.text-hv.hv-white:before {
+  background-color: #ffffff;
+}
+/* line 36, ../sass/_elements.scss */
+.text-hv:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* line 53, ../sass/_elements.scss */
+.text-hv:hover:before, .text-hv:focus:before, .text-hv:active:before, .text-hv.active:before {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* line 112, ../sass/_elements.scss */
+.btn-hv {
+  font-family: "proxima_nova_bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  font-size: 0.625em;
+  color: #151515;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 .9em;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../sass/_elements.scss */
+.btn-hv:before {
+  background-color: #ffffff;
+}
+/* line 16, ../sass/_elements.scss */
+.btn-hv.hv-green:before {
+  background-color: #81faa8;
+}
+/* line 20, ../sass/_elements.scss */
+.btn-hv.hv-red:before {
+  background-color: #fbaaa9;
+}
+/* line 24, ../sass/_elements.scss */
+.btn-hv.hv-blue:before {
+  background-color: #97f9fe;
+}
+/* line 28, ../sass/_elements.scss */
+.btn-hv.hv-yellow:before {
+  background-color: #fefa97;
+}
+/* line 32, ../sass/_elements.scss */
+.btn-hv.hv-white:before {
+  background-color: #ffffff;
+}
+/* line 36, ../sass/_elements.scss */
+.btn-hv:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* line 53, ../sass/_elements.scss */
+.btn-hv:hover:before, .btn-hv:focus:before, .btn-hv:active:before, .btn-hv.active:before {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* line 21, ../sass/main.scss */
+body {
+  /*padding-top: $header-height;*/
+}
+
+/* line 25, ../sass/main.scss */
+body.constellation {
+  background: #ededed;
+}
+
+/* line 29, ../sass/main.scss */
+body.about {
+  background-image: url("images/about-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 60% 112px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 39, ../sass/main.scss */
+body.about #header {
+  background: white;
+}
+
+/* line 44, ../sass/main.scss */
+body.print {
+  background-position: center 112px;
+  background-image: url("images/print-bg.jpg");
+}
+
+/* line 50, ../sass/main.scss */
+body.horizon {
+  background: #ededed;
+}
+/* line 53, ../sass/main.scss */
+body.horizon #header-main {
+  background-color: rgba(237, 237, 237, 0.75);
+}
+
+/*#header-main {
+  box-sizing: border-box;
+  //background-color: #151515;
+  height: $header-height;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+
+  @include clearfix();
+
+  .inner {
+    padding: 14px 20px 0 20px;
+    height: $header-inner-height;
+
+    #logo {
+      #title-main {
+        line-height: 52px;
+      }
+      a {
+        @include proxima-regular;
+        display: block;
+        text-transform: uppercase;
+        color: #151515;
+        letter-spacing: 2px;
+        font-size: 13px;
+
+        @include transition-property(color);
+        @include transition-duration(.2s);
+
+        &:hover {
+          color: #555555;
+        }
+
+        img {
+          vertical-align: middle;
+          font-size: 0;
+          line-height: 0;
+          margin-right: 10px;
+        }
+      }
+
+      &:hover img {
+        @include transform(rotate(90deg));
+        @include transition-property(transform);
+        @include transition-duration(1s);
+        @include transition-timing-function(cubic-bezier(0.77, 0, 0.175, 1));
+      }
+    }
+
+    #nav-main {
+      float: left;
+      margin-left: 60px;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+          padding: 0 15px;
+          line-height: $header-inner-height;
+
+          @include proxima-regular;
+          text-transform: uppercase;
+          color: #151515;
+          letter-spacing: 2px;
+          font-size: 11px;
+
+          @include transition-property(color);
+          @include transition-duration(.2s);
+
+          &:hover, &.current {
+            color: #555555;
+          }
+        }
+      }
+    }
+
+    #position {
+      padding-right: 38px;
+
+      @include proxima-regular;
+      text-transform: uppercase;
+      color: #151515;
+      letter-spacing: 2px;
+      font-size: 11px;
+      text-align: right;
+
+      .position-panel-trigger {
+        height: 32px;
+        line-height: 32px;
+
+        .text-wrapper {
+          display: inline-block;
+          line-height: normal;
+          vertical-align: bottom;
+        }
+      }
+
+      .position-info {
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+        color: #a7a7a7;
+      }
+    }
+
+    #datetime {
+      margin-right: 30px;
+
+      @include proxima-regular;
+      line-height: $header-inner-height;
+      text-transform: uppercase;
+      color: #151515;
+      letter-spacing: 2px;
+      font-size: 12px;
+
+      .date {
+        display: inline-block;
+        margin-right: 30px;
+
+      }
+      .time {
+        display: inline-block;
+      }
+    }
+  }
+}*/
+/* line 190, ../sass/main.scss */
+.content-constellations {
+  width: 1260px;
+  margin: 0 auto;
+  margin-top: 112px;
+}
+/* line 197, ../sass/main.scss */
+.content-constellations .filters li {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 28px 0;
+}
+/* line 202, ../sass/main.scss */
+.content-constellations .filters li a {
+  font-family: "martel_sans_semibold", sans-serif;
+  font-size: 12px;
+  color: #929292;
+}
+/* line 207, ../sass/main.scss */
+.content-constellations .filters li a:hover, .content-constellations .filters li a.current {
+  color: #000000;
+}
+/* line 214, ../sass/main.scss */
+.content-constellations #viewer {
+  background-color: #e7e7e7;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 219, ../sass/main.scss */
+.content-constellations #viewer .constellation {
+  float: left;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+/* line 225, ../sass/main.scss */
+.content-constellations #viewer .constellation svg {
+  display: block;
+}
+/* line 229, ../sass/main.scss */
+.content-constellations #viewer .constellation .inner {
+  display: block;
+  border-radius: 50%;
+  padding: 41px;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 238, ../sass/main.scss */
+.content-constellations #viewer .constellation circle {
+  fill: #e7e7e7;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 244, ../sass/main.scss */
+.content-constellations #viewer .constellation .title {
+  font-family: "proxima_nova_extrabold", sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 255, ../sass/main.scss */
+.content-constellations #viewer .constellation:hover .inner {
+  background-color: white;
+}
+/* line 261, ../sass/main.scss */
+.content-constellations #viewer .constellation:hover circle {
+  fill: #81faa8;
+}
+
+/* line 269, ../sass/main.scss */
+.content-constellation {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 182px;
+  padding-bottom: 90px;
+}
+/* line 275, ../sass/main.scss */
+.content-constellation header {
+  text-align: center;
+}
+/* line 278, ../sass/main.scss */
+.content-constellation header .title-main {
+  margin-bottom: 24px;
+}
+/* line 282, ../sass/main.scss */
+.content-constellation header .btn {
+  font-family: "proxima_nova_semibold", sans-serif;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+/* line 290, ../sass/main.scss */
+.content-constellation header svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* line 295, ../sass/main.scss */
+.content-constellation header svg circle {
+  fill: #ffffff;
+}
+/* line 299, ../sass/main.scss */
+.content-constellation header svg text {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  fill: #333333;
+  font-size: 14px;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 308, ../sass/main.scss */
+.content-constellation header .infos {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 30px;
+}
+/* line 312, ../sass/main.scss */
+.content-constellation header .infos .label {
+  color: #a7a7a7;
+}
+/* line 316, ../sass/main.scss */
+.content-constellation header .infos .source, .content-constellation header .infos .latin {
+  font-family: "martel_sans_bold", sans-serif;
+  float: left;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #676363;
+  margin-right: 30px;
+}
+/* line 325, ../sass/main.scss */
+.content-constellation header .infos .print {
+  font-family: "proxima_nova_extrabold", sans-serif;
+  float: right;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #191919;
+  letter-spacing: 2px;
+}
+/* line 336, ../sass/main.scss */
+.content-constellation .content {
+  text-align: justify;
+}
+/* line 340, ../sass/main.scss */
+.content-constellation .const-next, .content-constellation .const-prev {
+  padding: 20px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 348, ../sass/main.scss */
+.content-constellation .const-prev {
+  left: 0;
+}
+/* line 352, ../sass/main.scss */
+.content-constellation .const-next {
+  right: 0;
+}
+
+/* line 357, ../sass/main.scss */
+.content-print {
+  box-sizing: border-box;
+  width: 700px;
+  padding: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 56px;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #e8e8e8;
+  background-image: url("images/logo-88-big.png");
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* line 374, ../sass/main.scss */
+.content-about {
+  /*box-sizing: border-box;
+  width: 1260px;
+  padding: 150px;
+
+  margin: 0 auto;
+  margin-top: 140px;
+
+  background-position: right top;
+  background-image: url('images/logo-88-top.png');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-color: #e8e8e8*/
+  background-color: #e8e8e8;
+  margin: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 45%;
+  min-width: 500px;
+  margin-top: 20%;
+  margin-bottom: 7%;
+  padding: 8% 9%;
+  background-position: right top;
+  background-image: url("images/88-logo-34-10-tr.png");
+  background-size: 35%;
+}
+
+/* line 404, ../sass/main.scss */
+.content-horizon .svg-container {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 418, ../sass/main.scss */
+.content-horizon .mountains {
+  z-index: 101;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-image: url("images/mountains.png");
+  background-position: 50%;
+  background-repeat: repeat-x;
+    /*&:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 8px;
+
+      background-image: url('images/grid-pattern.png');
+    }*/
+}
+
+/* line 443, ../sass/main.scss */
+.content-legend {
+  padding-top: 112px;
+}
+/* line 446, ../sass/main.scss */
+.content-legend .inner {
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+/* line 451, ../sass/main.scss */
+.content-legend .inner p {
+  color: #000000;
+}
+/* line 456, ../sass/main.scss */
+.content-legend .legend-img {
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: -2px;
+}
+
+/* line 463, ../sass/main.scss */
+.content-map {
+  position: absolute;
+  top: 112px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* line 472, ../sass/main.scss */
+.content-map #svg-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateY(-50%) translatex(-50%);
+  -ms-transform: translateY(-50%) translatex(-50%);
+  -webkit-transform: translateY(-50%) translatex(-50%);
+  transform: translateY(-50%) translatex(-50%);
+  display: block;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #ededed;
+}
+/* line 484, ../sass/main.scss */
+.content-map #svg-map .group text {
+  font-size: 8px;
+  font-family: "proxima_nova_extrabold", sans-serif;
+}
+/* line 491, ../sass/main.scss */
+.content-map .card {
+  font-family: "proxima_nova_extrabold", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  text-align: center;
+  display: block;
+  position: absolute;
+  padding: 10px;
+}
+/* line 500, ../sass/main.scss */
+.content-map .card:after {
+  content: '';
+  position: absolute;
+  background: #151515;
+}
+/* line 507, ../sass/main.scss */
+.content-map .north, .content-map .south {
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 511, ../sass/main.scss */
+.content-map .north:after, .content-map .south:after {
+  left: 50%;
+  height: 5px;
+  width: 2px;
+}
+/* line 518, ../sass/main.scss */
+.content-map .north, .content-map .north:after {
+  top: 0;
+}
+/* line 522, ../sass/main.scss */
+.content-map .south, .content-map .south:after {
+  bottom: 0;
+}
+/* line 526, ../sass/main.scss */
+.content-map .west, .content-map .east {
+  width: 1em;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 531, ../sass/main.scss */
+.content-map .west:after, .content-map .east:after {
+  top: 50%;
+  height: 2px;
+  width: 5px;
+}
+/* line 538, ../sass/main.scss */
+.content-map .west, .content-map .west:after {
+  right: 0;
+}
+/* line 542, ../sass/main.scss */
+.content-map .east, .content-map .east:after {
+  left: 0;
+}
+
+/* line 549, ../sass/main.scss */
+.content-horizon .group text, .content-map .group text {
+  font-family: "proxima_nova_extrabold", sans-serif;
+  letter-spacing: 0.17em;
+  font-size: 11px;
+  color: #151515;
+  pointer-events: none;
+}
+/* line 557, ../sass/main.scss */
+.content-horizon .group circle, .content-map .group circle {
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 558, ../sass/main.scss */
+.content-horizon .group circle.star, .content-map .group circle.star {
+  stroke: #151515;
+  stroke-width: 2px;
+  pointer-events: none;
+}
+/* line 564, ../sass/main.scss */
+.content-horizon .group circle.hover, .content-map .group circle.hover {
+  fill: #ffffff;
+}
+/* line 572, ../sass/main.scss */
+.content-horizon .group line, .content-map .group line {
+  stroke: #151515;
+  stroke-width: 2px;
+  pointer-events: none;
+}
+/* line 578, ../sass/main.scss */
+.content-horizon .group rect, .content-map .group rect {
+  fill: rgba(237, 237, 237, 0.75);
+  -moz-transition-property: fill, height;
+  -o-transition-property: fill, height;
+  -webkit-transition-property: fill, height;
+  transition-property: fill height;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 586, ../sass/main.scss */
+.content-horizon .group:hover, .content-map .group:hover {
+  cursor: pointer;
+}
+/* line 589, ../sass/main.scss */
+.content-horizon .group:hover circle.star, .content-map .group:hover circle.star {
+  fill: #81faa8;
+}
+/* line 596, ../sass/main.scss */
+.content-horizon .group:hover rect, .content-map .group:hover rect {
+  fill: #81faa8;
+}
+
+/* line 603, ../sass/main.scss */
+#see-all {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-top: 3px solid #191919;
+  margin-top: -60px;
+  /*@include transition-property();
+  @include transition-property(top translateY);
+  @include transition-duration(1.5s);
+  @include transition-timing-function(ease-out);*/
+  -moz-transition: margin-top 0.7s cubic-bezier(0.19, 1, 0.22, 1), top 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: margin-top 0.7s cubic-bezier(0.19, 1, 0.22, 1), top 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: margin-top 0.7s cubic-bezier(0.19, 1, 0.22, 1), top 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: margin-top 0.7s cubic-bezier(0.19, 1, 0.22, 1), top 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 622, ../sass/main.scss */
+#see-all.open {
+  min-height: 60px;
+  height: auto;
+  margin-top: 112px;
+  top: 0;
+  overflow: auto;
+}
+/* line 630, ../sass/main.scss */
+#see-all .link-trigger {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-family: "martel_sans_black", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+/* line 641, ../sass/main.scss */
+#see-all .inner-data {
+  background: white;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1400px) {
+  /* line 648, ../sass/main.scss */
+  .content-constellations {
+    width: 1008px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1200px) {
+  /* line 655, ../sass/main.scss */
+  .content-constellations {
+    width: 756px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 1000px) {
+  /*.content-constellations{
+    width: 504px;
+  }*/
+}
+@media only screen and (max-width: 767px) {
+  /* line 668, ../sass/main.scss */
+  .about {
+    background: #e8e8e8 !important;
+  }
+  /* line 671, ../sass/main.scss */
+  .about .content-about {
+    width: 100%;
+    margin-top: 80px;
+    display: block;
+    position: relative;
+    background: none;
+  }
+}

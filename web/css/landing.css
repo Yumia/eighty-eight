@@ -1,0 +1,550 @@
+@import url(../fonts/proxima-nova/proxima-nova.css);
+@import url(../fonts/martel-sans/martel-sans.css);
+/* line 5, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_base.scss */
+::-moz-selection {
+  /* Code for Firefox */
+  color: #151515;
+  background: #fff;
+}
+
+/* line 6, ../sass/_base.scss */
+::selection {
+  color: #151515;
+  background: #fff;
+}
+
+/*::-webkit-scrollbar {
+  width: 11px;
+  height: 1px;
+  background-color: transparent;}
+
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+::-webkit-scrollbar-thumb:hover {background-color: $green;}
+::-webkit-scrollbar-thumb:active {background-color: $green; box-shadow: inset 0px 0px 19px #317D99;}*/
+/* line 26, ../sass/_base.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../sass/_base.scss */
+body {
+  font-family: "proxima_nova_regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151515;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 38, ../sass/_base.scss */
+strong {
+  font-family: "proxima_nova_bold", sans-serif;
+}
+
+/* line 43, ../sass/_base.scss */
+.content p, .content ul, .content ol, .content blockquote {
+  font-family: "proxima_nova_regular", sans-serif;
+  color: #666666;
+  margin-bottom: 1.5em;
+}
+/* line 49, ../sass/_base.scss */
+.content ul {
+  padding-left: 10px;
+}
+/* line 53, ../sass/_base.scss */
+.content ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+/* line 57, ../sass/_base.scss */
+.content ul li {
+  text-indent: -5px;
+}
+
+/* line 62, ../sass/_base.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 68, ../sass/_base.scss */
+a:hover {
+  color: #000000;
+}
+
+/* line 73, ../sass/_base.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "proxima_nova_bold", sans-serif;
+  margin-bottom: 24px;
+}
+
+/* line 78, ../sass/_base.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 82, ../sass/_base.scss */
+h2 {
+  font-size: 1.325em;
+}
+
+/* line 86, ../sass/_base.scss */
+h3 {
+  font-size: 1.25em;
+}
+
+/* line 90, ../sass/_base.scss */
+h4 {
+  font-size: 1.125em;
+}
+
+/* line 94, ../sass/_base.scss */
+h5, h6 {
+  font-size: 1em;
+}
+
+/* line 58, ../sass/_elements.scss */
+.left {
+  float: left;
+}
+
+/* line 59, ../sass/_elements.scss */
+.right {
+  float: right;
+}
+
+/* line 61, ../sass/_elements.scss */
+p.lead {
+  color: #929292;
+}
+
+/* line 65, ../sass/_elements.scss */
+.title-main {
+  font-family: "proxima_nova_extrabold", sans-serif;
+  font-size: 2.25em;
+  text-transform: uppercase;
+  color: #191919;
+  letter-spacing: 0.3em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+/* line 75, ../sass/_elements.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 .9em;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  font-family: "proxima_nova_bold", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.75em;
+  padding: 0.625em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #222222;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../sass/_elements.scss */
+.btn:before {
+  background-color: #ffffff;
+}
+/* line 16, ../sass/_elements.scss */
+.btn.hv-green:before {
+  background-color: #81faa8;
+}
+/* line 20, ../sass/_elements.scss */
+.btn.hv-red:before {
+  background-color: #fbaaa9;
+}
+/* line 24, ../sass/_elements.scss */
+.btn.hv-blue:before {
+  background-color: #97f9fe;
+}
+/* line 28, ../sass/_elements.scss */
+.btn.hv-yellow:before {
+  background-color: #fefa97;
+}
+/* line 32, ../sass/_elements.scss */
+.btn.hv-white:before {
+  background-color: #ffffff;
+}
+/* line 36, ../sass/_elements.scss */
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* line 53, ../sass/_elements.scss */
+.btn:hover:before, .btn:focus:before, .btn:active:before, .btn.active:before {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/* line 91, ../sass/_elements.scss */
+.btn.btn-green {
+  background-color: #81faa8;
+}
+/* line 95, ../sass/_elements.scss */
+.btn.btn-red {
+  background-color: #fbaaa9;
+}
+/* line 99, ../sass/_elements.scss */
+.btn.btn-blue {
+  background-color: #97f9fe;
+}
+/* line 103, ../sass/_elements.scss */
+.btn.btn-yellow {
+  background-color: #fefa97;
+}
+
+/* line 108, ../sass/_elements.scss */
+.text-hv {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 .9em;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../sass/_elements.scss */
+.text-hv:before {
+  background-color: #ffffff;
+}
+/* line 16, ../sass/_elements.scss */
+.text-hv.hv-green:before {
+  background-color: #81faa8;
+}
+/* line 20, ../sass/_elements.scss */
+.text-hv.hv-red:before {
+  background-color: #fbaaa9;
+}
+/* line 24, ../sass/_elements.scss */
+.text-hv.hv-blue:before {
+  background-color: #97f9fe;
+}
+/* line 28, ../sass/_elements.scss */
+.text-hv.hv-yellow:before {
+  background-color: #fefa97;
+}
+/* line 32, ../sass/_elements.scss */
+.text-hv.hv-white:before {
+  background-color: #ffffff;
+}
+/* line 36, ../sass/_elements.scss */
+.text-hv:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* line 53, ../sass/_elements.scss */
+.text-hv:hover:before, .text-hv:focus:before, .text-hv:active:before, .text-hv.active:before {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* line 112, ../sass/_elements.scss */
+.btn-hv {
+  font-family: "proxima_nova_bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  font-size: 0.625em;
+  color: #151515;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 .9em;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../sass/_elements.scss */
+.btn-hv:before {
+  background-color: #ffffff;
+}
+/* line 16, ../sass/_elements.scss */
+.btn-hv.hv-green:before {
+  background-color: #81faa8;
+}
+/* line 20, ../sass/_elements.scss */
+.btn-hv.hv-red:before {
+  background-color: #fbaaa9;
+}
+/* line 24, ../sass/_elements.scss */
+.btn-hv.hv-blue:before {
+  background-color: #97f9fe;
+}
+/* line 28, ../sass/_elements.scss */
+.btn-hv.hv-yellow:before {
+  background-color: #fefa97;
+}
+/* line 32, ../sass/_elements.scss */
+.btn-hv.hv-white:before {
+  background-color: #ffffff;
+}
+/* line 36, ../sass/_elements.scss */
+.btn-hv:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* line 53, ../sass/_elements.scss */
+.btn-hv:hover:before, .btn-hv:focus:before, .btn-hv:active:before, .btn-hv.active:before {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* line 16, ../sass/landing.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 20, ../sass/landing.scss */
+body {
+  background-color: #ededed;
+}
+
+/* line 24, ../sass/landing.scss */
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("images/logo-88-big.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -moz-background-size: 45%;
+  -o-background-size: 45%;
+  -webkit-background-size: 45%;
+  background-size: 45%;
+  display: none;
+}
+
+/* line 37, ../sass/landing.scss */
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* line 44, ../sass/landing.scss */
+#content {
+  min-width: 550px;
+  padding: 70px;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  display: none;
+}
+
+/* line 60, ../sass/landing.scss */
+h1 {
+  font-size: 1.8em;
+}

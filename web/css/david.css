@@ -1,0 +1,87 @@
+.eightyeight {z-index: 160;}
+.filters {text-align:center;}
+.cd-nav-trigger{bottom: 5%; right: 3%; top:inherit;}
+.cd-overlay-nav{bottom: 5%; right: 3%; top:inherit;}
+.cd-overlay-content{bottom: 5%; right: 3%; top:inherit;}
+
+.constellation h1 {
+	line-height: 48px !important;
+	text-align: left !important;
+	font-size: 48px !important; 
+	font-family: "proxima_nova_extrabold", sans-serif !important; 
+	text-transform: none !important;
+	letter-spacing: 0 !important;
+}
+
+@media only screen and (min-width: 767px) {
+  .starwheel-contener {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: table;
+  }
+}
+
+.contener-constellation-desc {
+	background-color: #fff;
+	margin-right : 48%;
+	z-index: 10;
+	width: 43%;
+}
+.contener-constellation-img {
+	border : 10px solid #fff;
+	background-color: transparent;
+	margin-left : 48%;
+	z-index: 5;
+}
+
+.constellation .content {
+  margin: auto;
+  padding : 10%;
+}
+
+@media only screen and (max-width: 1024px) {
+	.contener-constellation-desc {
+		margin-right : 40%;
+	}
+	.contener-constellation-img {
+		margin-right : 54%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.contener-constellation-desc {
+		width: 100%;
+		margin : 0;
+	}
+	.contener-constellation-img {
+		width: 100%;
+		margin : 0;
+	}
+}
+
+.const-prev, .const-next {
+	bottom : 0;
+	position : fixed;
+}
+.const-prev {
+	left : 0;
+}
+
+.const-next {
+	right : 0;
+}
+
+.state {
+	font-family: "proxima_nova_semibold", sans-serif;
+  	letter-spacing: 1px;
+  	font-size: 11px;
+}
+
+.title-main {
+	margin-bottom: 20px !important;
+}
+
+.relative {
+	position: relative;
+}
