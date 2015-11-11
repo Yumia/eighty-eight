@@ -166,7 +166,7 @@ class LoadDataCommand extends ContainerAwareCommand
 
         // Enregistrement en BDD
         $this->manager->flush();
-        $this->manager->clear();
+        //$this->manager->clear();
 
         $output->writeln("<info>[{$this->time()}][INFO] Data successfuly flushed into database !</info>");
         $output->writeln("<comment>[{$this->time()}][INFO] Done importing constellations</comment>");
@@ -197,7 +197,7 @@ class LoadDataCommand extends ContainerAwareCommand
             // Corrections
             $rightAscension = (float)number_format(AstroMaths::hms2hours("$h $m $s"), 6);
             $declination = (float)number_format(AstroMaths::dms2deg("$arc_h $arc_m"), 4);
-            $constallation = isset($this->constellations[strtolower($code)]) ? $this->constellations[strtolower($code)] : null;
+            $constellation = isset($this->constellations[strtolower($code)]) ? $this->constellations[strtolower($code)] : null;
 
             // Normalement, il n'y a pas d'étoile à ces coordonnées ...
             if($rightAscension == 0 && $declination == 0) {
@@ -218,7 +218,7 @@ class LoadDataCommand extends ContainerAwareCommand
             $star->setType($type);
             $star->setSpectrum($spectrum);
             $star->setName($name);
-            $star->setConstellation($constallation);
+            $star->setConstellation($constellation);
 
             // Sauvegarde et persistence
             $this->stars[] = $star;
@@ -239,7 +239,7 @@ class LoadDataCommand extends ContainerAwareCommand
 
         // Enregistrement en BDD
         $this->manager->flush();
-        $this->manager->clear();
+        //$this->manager->clear();
 
         $output->writeln("<info>[{$this->time()}][INFO] Data successfuly flushed into database !</info>");
         $output->writeln("<comment>[{$this->time()}][INFO] Done importing stars</comment>");
