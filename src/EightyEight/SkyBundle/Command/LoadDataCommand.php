@@ -166,7 +166,6 @@ class LoadDataCommand extends ContainerAwareCommand
 
         // Enregistrement en BDD
         $this->manager->flush();
-        //$this->manager->clear();
 
         $output->writeln("<info>[{$this->time()}][INFO] Data successfuly flushed into database !</info>");
         $output->writeln("<comment>[{$this->time()}][INFO] Done importing constellations</comment>");
@@ -239,7 +238,6 @@ class LoadDataCommand extends ContainerAwareCommand
 
         // Enregistrement en BDD
         $this->manager->flush();
-        //$this->manager->clear();
 
         $output->writeln("<info>[{$this->time()}][INFO] Data successfuly flushed into database !</info>");
         $output->writeln("<comment>[{$this->time()}][INFO] Done importing stars</comment>");
@@ -318,6 +316,7 @@ class LoadDataCommand extends ContainerAwareCommand
 
             $this->manager->persist($line);
 
+            $previous_coords = $current_coords;
             $i++;
         }
 
